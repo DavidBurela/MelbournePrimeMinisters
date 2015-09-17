@@ -19,3 +19,21 @@ Times (all meals are on level 11):
 6. Data Platform (SQL, Document DB)
 7. Web API (how to create and query with Fiddler and in code)
 8. Cloud futures: Talking about IoT (docker, Win10 IoT core, Event Hubs, Event Steams, Microservices, actors)
+
+### Bonus code for calling Web API from C# code
+Nuget packages
+Microsoft.Net.Http
+Web API client
+
+var client = new HttpClient();
+var response = await client.GetAsync("http://melbourneprimeministers.azurewebsites.net/api/PrimeMinisters/");
+
+var primeMinisters = await response.Content.ReadAsAsync<IEnumerable<PrimeMinister>>();
+
+var sb = new StringBuilder();
+foreach (var primeMinister in primeMinisters)
+{
+    sb.AppendLine(string.Format("Prime Minister:{0} year:{1}", primeMinister.Name, primeMinister.Year));
+}
+
+var formattedText = sb.ToString();
