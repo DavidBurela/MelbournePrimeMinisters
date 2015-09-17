@@ -20,6 +20,13 @@ namespace MelbournePrimeMinisters.Controllers
             return View();
         }
 
+        public ActionResult AnotherAbout()
+        {
+            ViewBag.Message = "Our 2nd action";
+
+            return View("About");
+        }
+
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
