@@ -171,12 +171,16 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\PoliticalPartiesController.cs" />
+    <Compile Include="Controllers\PrimeMinistersController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\MelbournePrimeMinistersContext.cs" />
+    <Compile Include="Models\PrimeMinister.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -235,6 +239,16 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\PoliticalParties\Create.cshtml" />
+    <Content Include="Views\PoliticalParties\Delete.cshtml" />
+    <Content Include="Views\PoliticalParties\Details.cshtml" />
+    <Content Include="Views\PoliticalParties\Edit.cshtml" />
+    <Content Include="Views\PoliticalParties\Index.cshtml" />
+    <Content Include="Views\PrimeMinisters\Create.cshtml" />
+    <Content Include="Views\PrimeMinisters\Delete.cshtml" />
+    <Content Include="Views\PrimeMinisters\Details.cshtml" />
+    <Content Include="Views\PrimeMinisters\Edit.cshtml" />
+    <Content Include="Views\PrimeMinisters\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
