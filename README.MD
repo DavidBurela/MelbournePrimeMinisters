@@ -1,5 +1,6 @@
 # Melbourne Azure web camp
 Your presenter today: David Burela
+Code located at: https://github.com/DavidBurela/MelbournePrimeMinisters
 
 Today's resources are available at: 
 https://github.com/Azure-Readiness/DevCamp
